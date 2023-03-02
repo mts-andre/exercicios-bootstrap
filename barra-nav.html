@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+</head>
+
+<body>
+    <!--barra de navegação com menu responsivo-->
+    <!--criando um navbar que será exibido para dispositivos do tipo sm(small)-->
+    <nav class="navbar navbar-expand-sm navbar-light bg-primary">
+        <a href="#" class="navbar-brand">Logo</a>
+        <!--atribuindo um icon-->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--agrupamento de itens-->
+        <div class="navbar-collapse collapse" id="nav-target">
+            <ul class="nav ml-auto">
+                <li class="nav-item "><a href="#" class="nav-link text-capitalize text-light">option</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-capitalize text-light">option</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-capitalize text-light">option</a></li>
+             </ul>
+        </div>
+    </nav>
+    <hr>
+    
+    <!--barra de navegação com formulário-->
+    <!--criando um navbar que será exibido para dispositivos do tipo sm(small)-->
+    <nav class="navbar navbar-expand-sm navbar-light bg-primary">
+        <a href="#" class="navbar-brand">Logo</a>
+        <!--atribuindo um icon-->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--agrupamento de itens-->
+        <div class="navbar-collapse collapse" id="nav-target">
+            <ul class="nav ml-auto">
+                <li class="nav-item "><a href="#" class="nav-link text-capitalize text-light">option</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-capitalize text-light">option</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-capitalize text-light">option</a></li>
+             </ul>
+            <!--formulário contido dentro do agrupamento-->
+            <form class="form-inline">
+                <input type="text" class="form-control w-75 input-" placeholder="Pesquisar">
+                <button class="btn btn-outline-primary bg-light ml-1">OK</button>
+            </form>
+        </div>
+    </nav>
+    <hr>
+
+    <!--barra de navegação com menu dropdown-->
+    <!--criando um navbar que será exibido para dispositivos do tipo sm(small)-->
+    <nav class="navbar navbar-expand-sm navbar-light bg-primary">
+        <a href="#" class="navbar-brand">Logo</a>
+        <!--atribuindo um icon-->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--agrupamento de itens-->
+        <div class="navbar-collapse collapse" id="nav-target">
+            <ul class="nav ml-auto">
+                <li class="nav-item "><a href="#" class="nav-link text-capitalize text-light">option</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-capitalize text-light">option</a></li>
+                <!--atribuindo item de lista como dropdown-->
+                <li class="nav-item dropdown">
+                    <!--alternando para dropdown(dropdown-toggle) e definindo estilo com data-toggle-->
+                    <a href="#" class="nav-link text-capitalize text-light dropdown-toggle" data-toggle="dropdown">option</a>
+                    <!--criando um agrupamento para o menu dropdown-->
+                    <div class="dropdown-menu">
+                        <!--definindo itens de dropdown-->
+                        <a href="#" class="dropdown-item">One</a><div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">Two</a><div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">Three</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <hr>
+
+    <!--alinhamento para barras de navegações-->
+    <!--Fixed-top-->
+    <nav class="navbar navbar-expand-sm fixed-top">
+        <a href="#" class="navbar-brand">Logo</a>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="#" class="nav-link text-capitalize">option</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-capitalize">option</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-capitalize">option</a></li>
+        </ul>
+    </nav>
+    <!--Fixed-bottom-->
+    <nav class="navbar navbar-expand-sm fixed-bottom">
+        <a href="#" class="navbar-brand">Logo</a>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="#" class="nav-link text-capitalize">option</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-capitalize">option</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-capitalize">option</a></li>
+        </ul>
+    </nav>
+    <!--Fixed-sticky-->
+    <nav class="navbar navbar-expand-sm sticky">
+        <a href="#" class="navbar-brand">Logo</a>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="#" class="nav-link text-capitalize">option</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-capitalize">option</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-capitalize">option</a></li>
+        </ul>
+    </nav>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
