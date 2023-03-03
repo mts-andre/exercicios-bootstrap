@@ -2,64 +2,144 @@
 <html lang="pt-br">
 
 <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 </head>
 
 <body>
-    <!--iniciando o formulário-->
-    <form>
-        <!--caixas de texto-->
-        <div class="form-group">
-            <label for="usr">Usuário:</label>
-            <input type="text" id="usr" placeholder="Digite seu usuário" class="form-control">
-        </div>
+  <!--iniciando o formulário-->
+  <form>
+    <!--caixas de texto-->
+    <!--definindo form-group-->
+    <div class="form-group">
+      <label for="usr">Usuário:</label>
+      <!--definindo form-control-->
+      <input type="text" id="usr" placeholder="Digite seu usuário" class="form-control" />
+    </div>
 
-        <!--tamanho de um input-->
-        <div class="form-group">
-            <label for="usr">Small</label>
-            <input type="text" id="usr" placeholder="Digite seu usuário" class="form-control form-control-sm">
-            <label for="usr">Large</label>
-            <input type="text" id="usr" placeholder="Digite seu usuário" class="form-control form-control-lg">
-        </div>
+    <!--tamanho de um input-->
+    <!--definindo form-group-->
+    <div class="form-group">
+      <label for="usr">Small</label>
+      <!--definindo form-control de tamanho pequeno ->sm-->
+      <input type="text" id="usr" placeholder="Digite seu usuário" class="form-control form-control-sm" />
+      <label for="usr">Large</label>
+      <!--definindo form-control de tamanho pequeno ->lg-->
+      <input type="text" id="usr" placeholder="Digite seu usuário" class="form-control form-control-lg" />
+    </div>
 
-        <!--caixas de texto(email)-->
-        <div class="form-group">
-            <label for="email">E-mail:</label>
-            <input type="email" id="usr" placeholder="Digite seu e-mail" readonly class="form-control">
-            <small class="form-text">E-mail será validado, aguarde.</small>
-        </div>
+    <!--caixas de texto(email)-->
+    <!--definindo form-group-->
+    <div class="form-group">
+      <label for="email">E-mail:</label>
+      <!--definindo form-group com attr readonly que inativa ação neste campo-->
+      <input type="email" id="usr" placeholder="Digite seu e-mail" readonly class="form-control" />
+      <!--definindo form-text, formatação de texto em um input-->
+      <small class="form-text">E-mail será validado, aguarde.</small>
+    </div>
 
-        <!--select-->
-        <div class="form-group">
-            <label for="estados">Estados</label>
-            <select id="estados">
-                <option value="sp">São Paulo</option>
-                <option value="rj">Rio de Janeiro</option>
-                <option value="mg">Minas Gerais</option>
-            </select>
-        </div>
+    <!--select-->
+    <!--definindo form-group-->
+    <div class="form-group">
+      <label for="estados">Estados</label>
+      <!--definindo form-control-->
+      <select id="estados" class="form-control">
+        <!--adicionando opções-->
+        <option value="sp">São Paulo</option>
+        <option value="rj">Rio de Janeiro</option>
+        <option value="mg">Minas Gerais</option>
+      </select>
+    </div>
 
-        <!--textarea-->
-        <div class=""></div>
-    </form>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <!--textarea-->
+    <!--definindo form-group-->
+    <div class="form-group">
+      <label for="mensagem">Mensagens</label>
+      <!--definindo form-control com tamanho(rows) com valor 3-->
+      <textarea name="mensagem" id="mensagem" rows="3" class="form-control"></textarea>
+    </div>
+
+    <!--tipo file-->
+    <!--formatação padrão de um custom file input-->
+    <!--definindo form-group-->
+    <div class="form-group">
+      <label for="arquivo">Arquivo</label>
+      <!--defininindo form-control-file-->
+      <input type="file" id="arquivo" class="form-control-file" />
+    </div>
+
+    <!--formatação customizada-->
+    <!--definindo classe customizada-->
+    <div class="custom-file">
+      <!--definindo label da classe customizada-->
+      <input type="file" id="arquivo" class="custom-file-input" />
+      <!--definindo input da classe customizada-->
+      <label for="arquivo" class="custom-file-label">Selecione arquivo</label>
+    </div>
+
+    <!--range-->
+    <!--definindo form-group-->
+    <div class="form-group">
+      <label id="range">Volume</label>
+      <!--definindo custom-range entre 0-100-->
+      <input type="range" id="range" min="0" max="100" class="custom-range" />
+    </div>
+
+    <!--button-->
+    <div>
+      <input type="submit" value="Button" class="btn btn-primary" />
+    </div>
+  </form>
+
+  <!--formulários inline-->
+  <!--definindo form-inline-->
+  <form class="mt-5 form-inline">
+    <!--definindo form-control-->
+    <input type="text" placeholder="Digite seu usuário" class="form-control" />
+    <!--definindo form-control-->
+    <input type="password" placeholder="Digite sua senha" class="form-control" />
+    <input type="button" value="Entrar" class="btn btn-primary" />
+  </form>
+
+  <!--validação de formulários-->
+  <!--is-valid, is-invalid, invalid-feedback-->
+  <form class="mt-5">
+    <!--definindo form-group-->
+    <div class="form-group">
+      <label for="email-usuario">E-mail</label>
+      <!--definindo form-control-->
+      <input type="text" id="email-usuario" placeholder="Digite seu e-mail" class="form-control" />
+    </div>
+
+    <!--definindo form-group-->
+    <div class="form-group">
+      <label for="senha-usuario">Senha</label>
+      <!--definindo form-control-->
+      <input type="password" id="senha-usuario" placeholder="Digite sua senha" class="form-control" />
+      <div class="invalid-feedback">Senha inválida</div>
+    </div>
+
+    <!--formatando botões-->
+    <input type="submit" value="Entrar" class="btn btn-primary" />
+  </form>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
