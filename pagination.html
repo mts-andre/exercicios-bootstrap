@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <!--criando uma paginação-->
+    <!--estrutura padrão-->
+    <nav>
+        <!--define paginação-->
+        <ul class="pagination">
+            <!--definindo itens e links de paginação-->
+            <!--podemos utilizar disabled para desabilitar uso de um page-item-->
+            <li class="page-item disabled"><a href="#" class="page-link">Anterior</a></li>
+            <!--podemos utilizar active para marcar como página atual-->
+            <li class="page-item active"><a href="#" class="page-link">1</a>
+            <li class="page-item"><a href="#" class="page-link">2</a></li>
+            <li class="page-item"><a href="#" class="page-link">Próximo</a></li>
+        </ul>
+    </nav>
+
+    <!--tamanhos de uma paginação - sm e lg-->
+    <nav>
+        <!--paginação de tamanho pequeno - sm-->
+        <!--define paginação-->
+        <ul class="pagination pagination-sm">
+            <!--definindo itens e links de paginação-->
+            <li class="page-item"><a href="#" class="page-link">Anterior</a></li>
+            <li class="page-item"><a href="#" class="page-link">1</a>
+            <li class="page-item"><a href="#" class="page-link">2</a></li>
+            <li class="page-item"><a href="#" class="page-link">Próximo</a></li>
+        </ul>
+    </nav>
+
+    <nav>
+        <!--paginação de tamanho grande - lg-->
+        <!--define paginação-->
+        <ul class="pagination pagination-lg">
+            <!--definindo itens e links de paginação-->
+            <li class="page-item"><a href="#" class="page-link">Anterior</a></li>
+            <li class="page-item"><a href="#" class="page-link">1</a>
+            <li class="page-item"><a href="#" class="page-link">2</a></li>
+            <li class="page-item"><a href="#" class="page-link">Próximo</a></li>
+        </ul>
+    </nav>
+
+    <!--alinhamento de páginação-->
+    <!--justify-content-<posicao> - center ou end-->
+    <nav>
+        <!--barra de navegação centralizada-->
+        <ul class="pagination justify-content-center">
+            <li class="page-item"><a href="#" class="page-link">Anterior</a></li>
+            <li class="page-item"><a href="#" class="page-link">1</a>
+            <li class="page-item"><a href="#" class="page-link">2</a></li>
+            <li class="page-item"><a href="#" class="page-link">Próximo</a></li>
+        </ul>
+    </nav>
+
+    <nav>
+        <!--barra de navegação posicionada a direita-->
+        <ul class="pagination justify-content-end">
+            <li class="page-item"><a href="#" class="page-link">Anterior</a></li>
+            <li class="page-item"><a href="#" class="page-link">1</a>
+            <li class="page-item"><a href="#" class="page-link">2</a></li>
+            <li class="page-item"><a href="#" class="page-link">Próximo</a></li>
+        </ul>
+    </nav>
+
+    <!--adicionando setas laquo/raquo na barra de paginação-->
+    <nav>
+        <ul class="pagination">
+            <!--podemos utilizar &laquo para simbolizar uma seta << - lembrando que o L em LAQUO significa left, portanto a seta aponta para a esquerda-->
+            <li class="page-item disabled"><a href="#" class="page-link">&laquo;</a></li>
+            <li class="page-item disabled"><a href="#" class="page-link">Anterior</a></li>
+            <li class="page-item active"><a href="#" class="page-link">1</a></li>
+            <li class="page-item"><a href="#" class="page-link">2</a></li>
+            <li class="page-item"><a href="#" class="page-link">3</a></li>
+            <li class="page-item"><a href="#" class="page-link">Próximo</a></li>
+            <!--podemos utilizar &raquo para simbolizar uma seta >> - lembrando que o R em RAQUO significa right, portanto a seta aponta para a direita-->
+            <li class="page-item"><a href="#" class="page-link">&raquo;</a></li>
+        </ul>
+    </nav>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
