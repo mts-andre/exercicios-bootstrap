@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <!--container != container-fluid-->
+    <!--um container padrão possui espaçamento lateral, enquanto um container-fluid ocupa 100% do espaço da tela-->
+    <div class="container"></div>
+    <div class="container-fluid"></div>
+
+    <!--largura fixa-->
+    <!--quando definimos apenas col em um grid, ele possui a mesma largura independente do dispositivo-->
+    <!--mesmo sendo redimensionado, os elementos não ficam empilhados-->
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+
+    <!--se defirnimos col-<tamanho> (sm, md, lg, xl) quando essa determinada medida for atingida, os elementos são posicionados um abaixo do outro-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm"></div>
+            <div class="col-sm"></div>
+        </div>
+    </div>
+
+    <!--podemos centralizar um elemento utilizando offset-<numero-linhas-a-serem-puladas>-->
+    <!--para ter um elemento completamente centralizado, o valor de offset deve ser a metade do valor de col-->
+    <div class="container">
+        <div class="row">
+            <!--como a metade de 6 é 3, então esse deve ser o valor de offset, tendo assim um elemento centralizado em grid-->
+            <div class="col-md-6 offset-3"></div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
