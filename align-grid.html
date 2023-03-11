@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style type="text/css">
+        .marcador {
+            background-color: #fe9d9d;
+            border: 1px solid #f94646;
+            height: 120px;
+        }
+
+        .marcador-container {
+            background-color: #5bf946;
+            border: 1px solid #36ae26;
+        }
+
+        .borda {
+            border: 1px solid #ff7300;
+        }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <!--alinhamento vertical--> 
+    <!--align-items-<alinhamento> (start, center and end)-->
+    <div class="container">
+        <!--alinhando os itens no posicionamento padrão (topo superior)-->
+        <div class="row marcador align-items-start">
+            <div class="col-4">Item</div>
+            <div class="col-4">Item</div>
+            <div class="col-4">Item</div>
+        </div>
+
+        <!--alinhando os itens no parte central-->
+        <div class="row marcador align-items-center">
+            <div class="col-4">Item</div>
+            <div class="col-4">Item</div>
+            <div class="col-4">Item</div>
+        </div>
+
+        <!--alinhando os itens na parte inferior-->
+        <div class="row marcador align-items-end">
+            <div class="col-4">Item</div>
+            <div class="col-4">Item</div>
+            <div class="col-4">Item</div>
+        </div>
+
+        <!--align-self-<alinhamento> - para posicionar um único elemento-->
+        <div class="row marcador">
+            <div class="col-4 align-self-start">Item</div>
+            <div class="col-4 align-self-center">Item</div>                
+            <div class="col-4 align-self-end">Item</div>
+        </div>
+        
+        <!--alinhamento horizontal (column)-->
+        <!--justify-content-<alinhamento> (start, center and end)-->
+        <!--alinhamento no posicionamento padrão (canto esquerdo)-->
+        <div class="row justify-content-start">
+            <div class="col-3 marcador">Item</div>
+            <div class="col-3 marcador">Item</div>
+            <div class="col-3 marcador">Item</div>
+        </div>
+
+        <!--alinhamento na posicão central-->
+        <div class="row justify-content-center">
+            <div class="col-3 marcador">Item</div>
+            <div class="col-3 marcador">Item</div>
+            <div class="col-3 marcador">Item</div>
+        </div>
+
+        <!--alinhamento no posicionamento padrão (canto esquerdo)-->
+        <div class="row justify-content-end">
+            <div class="col-3 marcador">Item</div>
+            <div class="col-3 marcador">Item</div>
+            <div class="col-3 marcador">Item</div>
+        </div>
+
+        <!--distribuição-->
+        <!--justify-content-<espacamento> (around or between)-->
+        <!--adiciona espaçamento entre os elementos e também entre as laterais-->
+        <div class="row justify-content-around">
+            <div class="col-3 marcador">Item</div>
+            <div class="col-3 marcador">Item</div>
+            <div class="col-3 marcador">Item</div>
+        </div>
+
+        <!--adiciona espaçamento entre os elementos-->
+        <div class="row justify-content-between">
+            <div class="col-3 marcador">Item</div>
+            <div class="col-3 marcador">Item</div>
+            <div class="col-3 marcador">Item</div>
+        </div>
+
+        <!--removendo espaçamento(padding-left) padrão-->
+        <!--no-gutters-->
+        <div class="row justify-content-center no-gutters">
+            <div class="col-3 marcador">Item</div>
+            <div class="col-3 marcador">Item</div>
+            <div class="col-3 marcador">Item</div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
